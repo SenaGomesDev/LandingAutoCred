@@ -1,6 +1,7 @@
 /* font */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
 
+
 * {
     padding: 0;
     margin: 0;
@@ -698,7 +699,8 @@ footer {
 
     #sobre .container {
         width: 90%;
-        margin: 0 auto; /* Centraliza horizontalmente */
+        margin: 0 auto;
+        /* Centraliza horizontalmente */
     }
 
     #sobre h2 {
@@ -713,53 +715,53 @@ footer {
         font-size: 18px;
     }
 
-/* Clientes Section */
-#clientes {
-    width: 100%;
-    padding: 80px 20px;
-    background: #111;
-    /* Cor de fundo para contraste */
-    text-align: center;
-    font-family: 'Poppins', sans-serif;
-    /* Aplicando a fonte */
-}
+    /* Clientes Section */
+    #clientes {
+        width: 100%;
+        padding: 80px 20px;
+        background: #111;
+        /* Cor de fundo para contraste */
+        text-align: center;
+        font-family: 'Poppins', sans-serif;
+        /* Aplicando a fonte */
+    }
 
-#clientes h2 {
-    font-size: 22px;
-    font-weight: 700;
-    color: #fff;
-    text-transform: uppercase;
-    letter-spacing: 1.5px;
-    margin-bottom: 20px;
-    position: relative;
+    #clientes h2 {
+        font-size: 22px;
+        font-weight: 700;
+        color: #fff;
+        text-transform: uppercase;
+        letter-spacing: 1.5px;
+        margin-bottom: 20px;
+        position: relative;
 
-}
+    }
 
-#clientes h3 {
-    color: orange;
-    font-size: 20px;
-}
+    #clientes h3 {
+        color: orange;
+        font-size: 20px;
+    }
 
-.client-item {
-    width: 250px;
-}
+    .client-item {
+        width: 250px;
+    }
 
 
-.clients .btn:hover {
-    background-color: transparent;
-}
+    .clients .btn:hover {
+        background-color: transparent;
+    }
 
-/*Footer Section */
+    /*Footer Section */
 
-.footer-section p,
-.footer-section ul {
-    font-size: 16px;
-}
+    .footer-section p,
+    .footer-section ul {
+        font-size: 16px;
+    }
 
-.footer-section .social-icons a {
-    font-size: 25px;
-    
-}
+    .footer-section .social-icons a {
+        font-size: 25px;
+
+    }
 
 }
 
@@ -793,14 +795,14 @@ footer {
 
     .hero {
         height: 65vh;
-    }  
-    
+    }
+
     .hero .text p {
         font-size: 30px;
     }
 
 
-    /* Seção Diferenciais */ 
+    /* Seção Diferenciais */
 
     #servicos .cards-container {
         grid-template-columns: 1fr;
@@ -821,7 +823,8 @@ footer {
 
     #servicos .container {
         width: 90%;
-        margin: 0 auto; /* Centraliza horizontalmente */
+        margin: 0 auto;
+        /* Centraliza horizontalmente */
     }
 
     #servicos h2 {
@@ -856,7 +859,8 @@ footer {
 
     #sobre .container {
         width: 90%;
-        margin: 0 auto; /* Centraliza horizontalmente */
+        margin: 0 auto;
+        /* Centraliza horizontalmente */
     }
 
     #sobre h2 {
@@ -866,110 +870,109 @@ footer {
     #sobre .card h3 {
         font-size: 30px;
     }
-    
+
     #sobre .card p {
         font-size: 28px;
     }
-    
+
 
     /* Clientes Section */
-#clientes {
-    width: 100%;
+    #clientes {
+        width: 100%;
+    }
+
+    #clientes h2 {
+        font-size: 40px;
+    }
+
+    .client-item {
+        width: 390px;
+    }
+
+    .client-item img {
+        width: 150px;
+        height: 150px;
+    }
+
+    .client-item p {
+        font-size: 32px;
+    }
+
+    .client-item span {
+        font-size: 28px;
+        font-weight: bold;
+        color: #333;
+    }
+
+
+    #clientes {
+        width: 100%;
+    }
+
+    #clientes h2 {
+        font-size: 40px;
+    }
+
+    #clientes h3 {
+        color: orange;
+        font-size: 35px;
+    }
+
+    .clients .btn {
+        padding: 20px 40px;
+        font-size: 25px;
+    }
+
+    .clients .btn:hover {
+        background-color: transparent;
+    }
+
+    .client-list {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 100px;
+        /* Espaçamento entre os parceiros */
+        flex-wrap: wrap;
+        margin-top: 30px;
+        width: 80%;
+        margin: 0px auto;
+        margin-top: 30px;
+    }
+
+    /* Footer Styles */
+    footer {
+        background-color: #111;
+        color: #fff;
+        padding: 40px 20px 20px;
+        font-size: 17px;
+        line-height: 1.6;
+    }
+
+
+    .footer-section h2,
+    .footer-section h3 {
+        margin-bottom: 30px;
+        font-size: 30px;
+        color: orange;
+    }
+
+    .footer-section p,
+    .footer-section ul {
+        font-size: 18px;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+
+
+    .footer-section .social-icons a {
+        font-size: 32px;
+
+    }
+
+    .footer-bottom {
+        font-size: 20px;
+    }
+
 }
-
-#clientes h2 {
-    font-size: 40px;
-}
-
-.client-item {
-    width: 390px;
-}
-
-.client-item img {
-    width: 150px;
-    height: 150px;
-}
-
-.client-item p {
-    font-size: 32px;
-}
-
-.client-item span {
-    font-size: 28px;
-    font-weight: bold;
-    color: #333;
-}
-
-
-#clientes {
-    width: 100%;
-}
-
-#clientes h2 {
-    font-size: 40px;
-}
-
-#clientes h3 {
-    color: orange;
-    font-size: 35px;
-}
-
-.clients .btn {
-    padding: 20px 40px;
-    font-size: 25px;
-}
-
-.clients .btn:hover {
-    background-color: transparent;
-}
-
-.client-list {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 100px;
-    /* Espaçamento entre os parceiros */
-    flex-wrap: wrap;
-    margin-top: 30px;
-    width: 80%;
-    margin: 0px auto;
-    margin-top: 30px;
-}
-
-/* Footer Styles */
-footer {
-    background-color: #111;
-    color: #fff;
-    padding: 40px 20px 20px;
-    font-size: 17px;
-    line-height: 1.6;
-}
-
-
-.footer-section h2,
-.footer-section h3 {
-    margin-bottom: 30px;
-    font-size: 30px;
-    color: orange;
-}
-
-.footer-section p,
-.footer-section ul {
-    font-size: 18px;
-    margin: 0;
-    padding: 0;
-    list-style: none;
-}
-
-
-.footer-section .social-icons a {
-    font-size: 32px;
-    
-}
-
-.footer-bottom {
-    font-size: 20px;
-}
-
-}
-
