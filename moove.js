@@ -9,14 +9,31 @@ document.addEventListener('DOMContentLoaded', function () {
             header.classList.remove('scrolled');
         }
     });
+})
 
-    // Alternar imagem de fundo da seção Hero
-    let heroBg = document.querySelector('.hero');
-    setInterval(() => {
-        heroBg.style.backgroundImage = "url(img/bg-light.jpg)";
-        setTimeout(() => {
-            heroBg.style.backgroundImage = "url(img/bg.jpg)";
-        }, 1000);
-    }, 2200);
-});
+const heroBg = document.querySelector('.hero');
+const images = ['img/bg.jpg', 'img/bg-light.jpg']; // Array com as imagens
+let currentIndex = 0;
 
+// Pré-carrega as imagens
+function preloadImages(imageArray) {
+    imageArray.forEach((src) => {
+        const img = new Image();
+        img.src = src;
+    });
+}
+
+// Função para trocar o fundo
+function changeBackground() {
+    heroBg.style.backgroundImage = `url(${images[currentIndex]})`;
+    currentIndex = (currentIndex + 1) % images.length; // Alterna o índice
+}
+
+// Adiciona uma transição suave para a propriedade backgroundImage
+heroBg.style.transition = 'background-image 1s ease-in-out';
+
+// Pré-carrega as imagens antes de iniciar a troca
+preloadImages(images);
+
+// Configura o intervalo para mudar o fundo automaticamente
+setInterval(changeBackground, 1000); // Troca a cada 3 segundos
