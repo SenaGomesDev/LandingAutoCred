@@ -31,5 +31,5 @@ heroBg.style.transition = 'background-image 1s ease-in-out';
 // Inicia o pré-carregamento das imagens e começa a animação após o carregamento
 preloadImages(images, () => {
     // Troca o fundo automaticamente após todas as imagens serem carregadas
-    setInterval(changeBackground, 1500); // Troca a cada 3 segundos
+    setInterval(changeBackground, 3000); // Troca a cada 3 segundos
 });
