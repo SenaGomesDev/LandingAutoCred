@@ -122,6 +122,29 @@ nav .social a i:hover {
     justify-content: center;
     align-items: center;
     position: relative;
+    overflow: hidden;
+}
+
+.bg-layer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-size: cover;
+    background-position: center;
+    transition: opacity 1s ease-in-out;
+}
+
+/* Configurações iniciais */
+.bg-layer:first-child {
+    opacity: 1; /* A primeira camada está visível */
+    z-index: 1;
+}
+
+.bg-layer:last-child {
+    opacity: 0; /* A segunda camada começa invisível */
+    z-index: 0;
 }
 
 .hero::before {
