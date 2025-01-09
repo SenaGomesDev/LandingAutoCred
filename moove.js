@@ -19,6 +19,15 @@ function preloadImages(imageArray, callback) {
     });
 }
 
+// Chamada da função de pré-carregamento
+preloadImages(images, () => {
+    // Código a ser executado após todas as imagens serem carregadas
+    // Por exemplo, iniciar a animação ou exibir as imagens
+    console.log('Todas as imagens foram carregadas!');
+    // Aqui você pode chamar a função que troca o fundo
+    changeBackground();
+});
+
 // Função para trocar o fundo
 function changeBackground() {
     heroBg.style.backgroundImage = `url(${images[currentIndex]})`;
