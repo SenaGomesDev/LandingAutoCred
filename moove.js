@@ -2,6 +2,14 @@ const heroBg = document.querySelector('.hero');
 const images = ['img/bg.jpg', 'img/bg-light.jpg']; // Array com as imagens
 let currentIndex = 0;
 
+// Função para trocar o fundo
+function changeBackground() {
+    if (heroBg) {
+        heroBg.style.backgroundImage = `url(${images[currentIndex]})`;
+        currentIndex = (currentIndex + 1) % images.length; // Alterna o índice
+    }
+}
+
 // Função para pré-carregar as imagens
 function preloadImages(imageArray, callback) {
     let loadedImages = 0;
@@ -19,26 +27,13 @@ function preloadImages(imageArray, callback) {
     });
 }
 
-// Chamada da função de pré-carregamento
-preloadImages(images, () => {
-    // Código a ser executado após todas as imagens serem carregadas
-    // Por exemplo, iniciar a animação ou exibir as imagens
-    console.log('Todas as imagens foram carregadas!');
-    // Aqui você pode chamar a função que troca o fundo
-    changeBackground();
-});
-
-// Função para trocar o fundo
-function changeBackground() {
-    heroBg.style.backgroundImage = `url(${images[currentIndex]})`;
-    currentIndex = (currentIndex + 1) % images.length; // Alterna o índice
+// Adiciona uma transição suave para o fundo
+if (heroBg) {
+    heroBg.style.transition = 'background-image 1s ease-in-out';
 }
 
-// Adiciona uma transição suave para a propriedade backgroundImage
-heroBg.style.transition = 'background-image 1s ease-in-out';
-
-// Inicia o pré-carregamento das imagens e começa a animação após o carregamento
+// Precarrega as imagens e inicia a troca de fundo
 preloadImages(images, () => {
-    // Troca o fundo automaticamente após todas as imagens serem carregadas
+    changeBackground(); // Define a imagem inicial
     setInterval(changeBackground, 3000); // Troca a cada 3 segundos
 });
