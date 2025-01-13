@@ -37,3 +37,16 @@ preloadImages(images, () => {
     changeBackground(); // Define a imagem inicial
     setInterval(changeBackground, 3000); // Troca a cada 3 segundos
 });
+
+window.addEventListener("scroll", function() {
+    const header = document.querySelector("header");
+    const scrollPosition = window.scrollY;
+
+    // Adiciona a classe "scrolled" quando o scroll for maior que 50px
+    if (scrollPosition > 50) {
+        header.classList.add("scrolled");
+    } else {
+        header.classList.remove("scrolled");
+    }
+});
+

@@ -10,6 +10,17 @@
     font-family: 'Poppins', sans-serif;
 }
 
+/* Header */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    /* Adicionando fundo semitransparente */
+    z-index: 1000;
+    transition: top 0.3s; /* Transição suave para o efeito de esconder/mostrar */
+}
 
 /* Menu oculto quando rolar a página */
 header.scrolled nav {
@@ -40,32 +51,18 @@ header nav {
 
 /* Para evitar que o conteúdo do menu fique escondido, quando o menu não estiver visível, podemos ajustar a margem superior do conteúdo */
 body {
-    margin-top: 80px;
-    /* Para compensar a altura do menu fixo */
+    margin-top: 80px;  /* Para compensar a altura do menu fixo */
     margin: 0;
     padding: 0;
     overflow-x: hidden;
 }
 
-
-/* Header */
-header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    background-color: rgba(0, 0, 0, 0.7);
-    /* Adicionando fundo semitransparente */
-    z-index: 1000;
-}
-
-header nav {
-    width: 90%;
-    margin: auto;
+/* Estilo do menu */
+nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 80px;
+    padding: 10px 20px;
 }
 
 header nav .logo {
